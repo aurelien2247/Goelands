@@ -1,0 +1,587 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body, html{
+  background-color: #2C3E50;
+  overflow-x: hidden;
+}
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+/*--------------------------------------Sommaire--------------------------------------------*/
+/*1.Bar de navigation (header)                                                              */
+/*2.Premiere partie de la page index                                                        */
+/*3. Deuxieme partie du site                                                                */
+/*4.Sponsor                                                                                 */
+/*5.Newsletter                                                                              */
+/*Page Sponsors                                                                             */
+/*1.Couverture image                                                                        */
+/*2.Content                                                                                 */
+/*Page Galerie                                                                              */
+/*1.texte                                                                                   */
+/*Page Contact                                                                              */
+/*1.Formulaire                                                                              */
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------Bar de Navigation-----------------------*/
+
+nav{    /*Menu de navigation*/
+  font-family: 'Roboto', Arial;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  min-height: 7vh;
+  width: 100%;
+  z-index: 5;
+  text-transform: uppercase;
+  padding-left: 1%;
+}
+
+.scrolled{
+  height: auto;
+  background: rgba(22, 22, 22, .9);
+  transition: .3s ease-in-out;
+}
+.logo{
+  width: 4%;
+}
+
+.nav-links{
+  width: 50%;
+  margin-left: 38%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+nav a{
+  color: #ED3E00FF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 20px;
+  transition-property: border-top, border-bottom;
+}
+
+nav a:hover{
+  transition-delay: 3.0s;
+  transition-duration: 3.0s;
+  text-decoration: none;
+  color: white;
+}
+.menu-menu-container{
+  padding-left: 45%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+
+
+.titre{/*titre de page*/
+  font-family: 'Roboto', Arial;
+  font-size: 40px;
+  color: white;
+  width: 80%;
+  padding-top: 120px;
+  text-align: start;
+  padding-bottom: 90px;
+  z-index: 2;
+}
+
+/******************************** Premiere partie *******************************************/
+.monter{
+  padding-top: 42.5%;
+}
+.Facebook h1{
+  color: #ED3E00FF;
+}
+.Facebook{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 1.5rem 0;
+  letter-spacing: 1.2px;
+  font-family : 'Source Sans Pro', sans-serif ;
+  background-color: #2C3E50;
+  position: absolute;
+  top: auto;
+
+}
+.iframeFacebook{
+  width: 80%;
+  height: 600px;
+}
+
+/******************************** Deuxieme partie *******************************************/
+
+.resultat{/* Box resultat */
+  width: 50%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 1.5rem 0;
+  letter-spacing: 1.2px;
+  font-family : 'Source Sans Pro', sans-serif ;
+  background-color: #ED3E00FF;
+  position: absolute;
+  top: auto;
+}
+.resultat h1{
+  color: black;
+}
+.classement{/* Box resultat */
+  width: 50%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 1.5rem 0rem;
+  letter-spacing: 1.2px;
+  font-family : 'Source Sans Pro', sans-serif ;
+  background-color: black;
+  position: absolute;
+  top: auto;
+  left: 50%;
+}
+.classement h1{
+  color: #ED3E00FF;
+}
+.classement h1{
+  text-align: center;
+}
+.colonne{
+  display: flex;
+}
+.iframeClassement{
+  width: 80%;
+  height: 600px;
+}
+.iframeResultat{
+  width: 80%;
+  height: 600px;
+}
+/********************************* Newsletter *******************************/
+.container-margin {
+  margin-left: 20%;
+}
+.newsletter{
+  margin-top: 50%;
+}
+.main-title i{
+  transition: none 0s ease 0s;
+  padding-left: 33%;
+  text-align: left;
+  line-height: 30px;
+  border-width: 0px;
+  letter-spacing: 3px;
+  font-weight: 0px;
+  font-size: 70px;
+  margin-bottom: 20px;
+  color:  #ED3E00FF;
+}
+.main-title h1 {
+  color: white;
+  padding-left: 26%;
+  font-family: 'Roboto', Arial;
+  font-size: 50px;
+}
+.main-title h2 {
+  color: white;
+  padding-left: 20%;
+  font-family: 'Roboto', Arial;
+  font-size: 25px;
+}
+.p1 {
+  color: white;
+  padding-left: 24%;
+  font-family: 'Roboto', Arial;
+  font-size: 23px;
+}
+.p2 {
+  color: white;
+  padding-left: 20%;
+  font-family: 'Roboto', Arial;
+  font-size: 23px;
+}
+.p3 {
+  color: white;
+  padding-left: 23%;
+  font-family: 'Roboto', Arial;
+  font-size: 23px;
+}
+.margin-button{
+  padding-left: 30%;
+}
+.abonnement {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: #ED3E00FF;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+.abonnement:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+.abonnement:focus {
+	outline: none;
+}
+
+/*----------------------------------------------------Sponsors------------------------------*/
+.img-center{
+  background-size: cover;
+  width: 100%;
+  height: auto;
+
+}
+.sponsor h1{
+  padding-left: 38%;
+  color: white;
+}
+.sponsor h2{
+  padding-left: 33%;
+  color: white;
+}
+.n2-font-a7ab7b0656b20433629b971cd0ff3d33-hover{
+  opacity: 0;
+}
+
+.n2-font-ae7cc03505c9a5bd481c6f8379a190d4-hover{
+  opacity: 0;
+}
+
+.n2-font-a7ab7b0656b20433629b971cd0ff3d33-hover:hover{
+  opacity: 1;
+}
+
+.n2-font-ae7cc03505c9a5bd481c6f8379a190d4-hover:hover{
+  opacity: 1;
+}
+.devenir-partenaire h1{
+  padding-left: 23%;
+}
+.devenir-partenaire h2{
+  padding-left: 27%;
+}
+.nom h2{
+  color: white;
+  padding-left: 30%;
+}
+.box{
+  padding-left: 27%;
+}
+.wpcf7-not-valid-tip {
+  color: red;
+}
+.wpcf7-response-output{
+  margin-left: 25%;
+  color: red;
+}
+.has-spinner {
+  margin-left: 32%;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: #ED3E00FF;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+.has-spinner:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+.has-spinner:focus {
+	outline: none;
+}
+/*------------------------------------------Galerie-----------------------------------------*/
+.container-galerie{
+  
+}
+.container-galerie h1{
+  color: white;
+  padding-left: 30%;
+}
+.p1{
+ color: white; 
+}
+.saison2020-2021 {
+  padding-left: 20%;
+  padding-top: 4%;
+}
+.saison2021-2022{
+  padding-left: 10%;
+  padding-top: 4%;
+}
+.Thumb{
+  border-radius: 3%;
+}
+.ngg-album-desc:hover {
+  color: #ED3E00FF;
+  text-decoration: none;
+}
+.ngg-album-gallery-image-counter{
+  color: white;
+  padding-left: 30%;
+}
+.aligner{
+  display: flex;
+}
+.ngg-galleryoverview{
+  display: flex;
+}
+.ngg-breadcrumbs{
+  opacity: 0;
+}
+.ngg-album-desc{
+  color: white;
+  padding-left: 25%;
+  padding-top: -10px;
+}
+.ngg-navigation{
+  padding-top: 15%;
+}
+.prev{
+  color: white;
+  padding-right: 10%;
+  font-size: 30px;
+  padding-left: 10%;
+}
+.next{
+  margin-top: 10px;
+}
+.ngg-imagebrowser h3{
+  opacity: 0;
+}
+/* page histoire*/
+.page-histoire{
+  width: 50%;
+  margin-left: 25%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  padding: 1.5rem 0;
+  letter-spacing: 1.2px;
+  font-family : 'Source Sans Pro', sans-serif ;
+  background-color: white;
+  position: absolute;
+  top: auto;
+}
+/*------------------------------------------Nous contacter------------------------------------------*/
+.textcontact{
+  padding-left: 1%;
+  padding-top: 3%;
+}
+.wpforms-field-sublabel {
+  opacity: 0;
+}
+.wpforms-160-field_7-container{
+  display: flex;
+}
+.textcontact h1{
+  color: white;
+}
+.textcontact h2{
+  margin-top: -15px;
+  color: white;
+}
+.wpforms-field {
+  color: white;
+}
+
+
+/* newsletter page */
+.wp-block-tnp-minimal{
+  color: red;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10px;
+}
+/*------------------------------------------Footer------------------------------------------*/
+.footer {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer ul a:hover {
+  opacity:0.8;
+}
+
+
+.footer .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer .item.social > a:hover {
+  opacity:0.9;
+  color: #ED3E00FF;
+}
+
+.copyright {
+  text-align:center;
+  padding-top: 2%;
+  padding-right: 0%;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*-------------------------------------RESPONSIVE-------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){
+  body {
+      overflow-x: hidden;
+  }
+  .nav{
+    width: 65%;
+  }
+  .colonne{
+    display: flex;
+  }
+
+  .colonne{
+    width: 60%;
+  }
+  .resultat{
+    width: 50%;
+  }
+  .classement{
+    width: 50%;
+  }
+
+  .iframeClassement{
+    width: 50%;
+    height: 600px;
+  }
+  .iframeResultat{
+    width: 50%;
+    height: 600px;
+  }
+
+
+
+
+}
+@media screen and (max-width: 1481px){
+  .monter{
+    width: 50%;
+    padding-top: 70%;
+  }
+  .menu-menu-container{
+    padding-left: 20%;
+  }
+  .recentrer {
+    padding-top: 25%;
+  }
+  
+}
+
+
+.nav-active {   /*Quand le menu burger est actif*/
+  transform: translateX(0%);
+}
+
+@media (max-width:767px) {
+  .footer .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
